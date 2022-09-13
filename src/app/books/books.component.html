@@ -1,0 +1,25 @@
+
+<div class="container my-3">
+    <div class="row my-2">
+        <ng-container *ngFor =" let b of books">
+        <div class="col-md-4 my-2">
+            <div class="card" style="width:300px">
+                <div class="card-body">
+                    <div class="card-title text-center bg-secondary "><b>{{b.title|uppercase}}</b> </div>
+                    <img src="{{b.book_image}}" alt="my img" class="card-img-top" >
+                    <hr>
+                    <div class="card-text" style="height:200px ;">
+                        <p><b>Author: </b>{{b.author}}</p>
+                        <p><b>Contributor:</b>{{b.contributor}}</p>
+                        <p><b>Description</b>:{{b.description}}...</p>
+                        <p><span><b>Price</b>:RS:</span>{{b.price}}</p>
+                    </div>
+                </div>
+                <div class="card-footer d-grid">
+                    <a href="{{b.amazon_product_url}}" class="btn btn-info" role="button" >BUY BOOK</a>
+                </div>  
+            </div>
+        </div>
+    </ng-container>
+    </div>
+</div>
