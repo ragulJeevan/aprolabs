@@ -1,0 +1,26 @@
+<div class="container my-4">
+    <h1 class="text-center my-2"><b>TOP STORIES</b></h1>
+    <ng-container *ngFor="let s of stories">
+        <div class="card my-4">
+            <!--heading-->
+            <div class="card-header display-6">
+                <h1 class="text-center"><b>{{s.title}}</b></h1>
+            </div>
+            <!--image-->
+            <span class="h">{{s.section}}>>{{s.subsection}}</span>
+            <div class="card-body">
+                <!--sub title-->
+                <div class="card-title display-6 ">{{s.des_facet}}</div>
+                <!--abstract and other-->
+                <div class="card-text">
+                    <p><b>{{s.abstract}}</b></p>
+                    <a href="{{s.url}}" target="_blank">Read More..</a>
+                </div>
+            </div>
+            <!--publisher and date-->
+            <div class="ms-auto">
+                <p ><i>{{s.byline}}</i></p>
+            </div>
+        </div>
+    </ng-container>
+</div>

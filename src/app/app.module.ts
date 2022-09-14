@@ -10,6 +10,8 @@ import { BooksComponent } from './books/books.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MovieComponent } from './movie/movie.component';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     BooksComponent,
     HeaderComponent,
     FooterComponent,
+    MovieComponent,
+    StoryComponent,
    
   ],
   imports: [

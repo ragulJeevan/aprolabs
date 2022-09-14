@@ -1,11 +1,12 @@
 
 <div class="container my-3">
+    <h1 class="text-center my-4"><b>TOP RATED BOOKS</b></h1>
     <div class="row my-2">
         <ng-container *ngFor =" let b of books">
         <div class="col-md-4 my-2">
             <div class="card" style="width:300px">
                 <div class="card-body">
-                    <div class="card-title text-center bg-secondary "><b>{{b.title|uppercase}}</b> </div>
+                    <div class="card-title text-center"><b>{{b.title|uppercase}}</b> </div>
                     <img src="{{b.book_image}}" alt="my img" class="card-img-top" >
                     <hr>
                     <div class="card-text" style="height:200px ;">
@@ -16,7 +17,7 @@
                     </div>
                 </div>
                 <div class="card-footer d-grid">
-                    <a href="{{b.amazon_product_url}}" class="btn btn-info" role="button" >BUY BOOK</a>
+                    <a href="{{b.amazon_product_url}}" class="btn btn-info" role="button" target="_blank" >BUY BOOK</a>
                 </div>  
             </div>
         </div>

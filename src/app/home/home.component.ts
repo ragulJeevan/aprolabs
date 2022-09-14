@@ -8,7 +8,6 @@ import { HomeService } from '../services/home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  hContents:any;
 
 
   constructor(
@@ -16,9 +15,17 @@ export class HomeComponent implements OnInit {
     private route:Router,
     ) { }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+   }
   gotoBooks(){
   return this.route.navigate(["/book"]);
   }
-}
+  gotoMovies(){
+    return this.route.navigate(["/movie"])
+  }
+  gotoStories(){
+    return this.route.navigate(["/story"])
+  }
+  }
+
 
