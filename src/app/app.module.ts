@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { HomeComponent } from './home/home.component';
-import { BooksComponent } from './books/books.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
+import { BooksComponent } from './components/books/books.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MovieComponent } from './movie/movie.component';
-import { StoryComponent } from './story/story.component';
+import { MovieComponent } from './components/movie/movie.component';
+import { StoryComponent } from './components/story/story.component';
 
 @NgModule({
   declarations: [

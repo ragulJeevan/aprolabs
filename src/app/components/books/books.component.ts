@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs';
-import { HomeService } from '../services/home.service';
+import { HomeService } from '../../services/home.service';
 
 @Component({
   selector: 'app-books',
